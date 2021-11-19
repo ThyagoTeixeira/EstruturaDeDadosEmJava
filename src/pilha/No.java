@@ -1,37 +1,37 @@
 package pilha;
 
-public class No {
+public class No<T>{
 	
-	private int dado;
-	private No refNo;
+	private T object;
+	private No<T> refNo;
 	
 	
-	public No(int dado) {
-		this.dado = dado;
+	public No(T object) {
+		this.object = object;
 		this.refNo = null;
 	}
 	
 	
 
-	public int getDado() {
-		return dado;
+	public Object getDado() {
+		return this.object;
 	}
 
 
 
-	public void setDado(int dado) {
-		this.dado = dado;
+	public void setDado(T object) {
+		this.object = object;
 	}
 
 
 
-	public No getRefNo() {
+	public No<T> getRefNo() {
 		return refNo;
 	}
 
 
 
-	public void setRefNo(No refNo) {
+	public void setRefNo(No<T> refNo) {
 		this.refNo = refNo;
 	}
 
@@ -39,7 +39,7 @@ public class No {
 
 	@Override
 	public String toString() {
-		return "No [dado=" + dado + "]";
+		return "No [dado=" + this.object + "]";
 	}
 
 	

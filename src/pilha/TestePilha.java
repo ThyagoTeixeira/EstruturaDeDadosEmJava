@@ -3,14 +3,14 @@ package pilha;
 public class TestePilha {
 	public static void main(String[] args) {
 
-		Pilha minhapilha = new Pilha();
+		Pilha<Integer> minhapilha = new Pilha<>();
 
-		minhapilha.push(new No(1));
-		minhapilha.push(new No(2));
-		minhapilha.push(new No(3));
-		minhapilha.push(new No(4));
-		minhapilha.push(new No(5));
-		minhapilha.push(new No(6));
+		minhapilha.push(10);
+		minhapilha.push(20);
+		minhapilha.push(30);
+		minhapilha.push(40);
+		minhapilha.push(50);
+		minhapilha.push(60);
 
 		System.out.println(minhapilha.toString());
 
@@ -21,6 +21,8 @@ public class TestePilha {
 		System.out.println(minhapilha.top());
 
 		System.out.println(minhapilha.toString());
+		
+		System.out.println(minhapilha.size());
 
 	}
 }
