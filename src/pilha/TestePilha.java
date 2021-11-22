@@ -12,15 +12,15 @@ public class TestePilha {
 		minhapilha.push(50);
 		minhapilha.push(60);
 
-		System.out.println(minhapilha.toString());
+		System.out.println(minhapilha);
 
 		minhapilha.pop();
 
-		System.out.println(minhapilha.toString());
+		System.out.println(minhapilha);
 
 		System.out.println(minhapilha.top());
 
-		System.out.println(minhapilha.toString());
+		System.out.println(minhapilha);
 		
 		System.out.println(minhapilha.size());
 
